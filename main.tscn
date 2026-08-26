@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=3 format=3]
 
 [ext_resource type="PackedScene" path="res://pacman.tscn" id="1_main"]
+[ext_resource type="Script" path="res://main.gd" id="2_main"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("2_main")
 
 [node name="Pacman" parent="." instance=ExtResource("1_main")]
 position = Vector2(300, 324)

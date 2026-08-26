@@ -1,6 +1,6 @@
 # CS 276 · Pac-Man, One Build at a Time
 
-The live-coding companion for **Lecture W1R1: Building Pac-Man**. Each branch is a
+The companion repo for **Lecture W1R1: Building Pac-Man**. Each branch is a
 checkpoint from class; `main` is the finished state.
 
 | Branch | What works | GDScript you meet there |
@@ -13,7 +13,7 @@ checkpoint from class; `main` is the finished state.
 ## Presenting from this repo
 
 ```bash
-git checkout Build1    # start of class: movement done, nothing else
+git checkout Build1    # movement done, nothing else
 git checkout Build2    # after the facing build
 git checkout Build3    # after pellets
 git checkout main      # the complete demo
@@ -27,7 +27,7 @@ edited live first, or your edits will fight the checkout.)
 
 Open `project.godot` in Godot (standard build). Run the project; arrow keys move
 Pac-Man. On `main`, watch the ghost wander through the pellet row: it *eats the
-pellets*. That is not a bug we fix today - it is Thursday's cliffhanger.
+pellets*. That is not a bug we fix today, it is Thursday's cliffhanger.
 Why does the pellet not care who touched it? Collision layers and masks: next week.
 
 ## What is deliberately missing
@@ -39,4 +39,4 @@ panel (signals, week 3), ghost brains (state machines, week 4), the actual maze
 ## Credits
 
 All art is original coursework (drawn in the course's arcade palette); no Namco
-assets are used or included. Code and art: MIT, use freely in your labs.
+assets are used or included. Void where prohibited.

@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/ghost.png" id="1_gho"]
+[ext_resource type="Script" path="res://ghost.gd" id="2_gho"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gho"]
+radius = 14.0
+
+[node name="Ghost" type="CharacterBody2D"]
+script = ExtResource("2_gho")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_gho")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_gho")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.0
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

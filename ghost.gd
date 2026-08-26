@@ -7,8 +7,8 @@ const DIRECTIONS := [Vector2.LEFT, Vector2.RIGHT, Vector2.UP, Vector2.DOWN]
 var direction: Vector2 = Vector2.LEFT
 
 func _process(delta: float) -> void:
-    position += direction * speed * delta
-    position = position.clamp(Vector2.ZERO, get_viewport_rect().size)
+	position += direction * speed * delta
+	position = position.clamp(Vector2.ZERO, get_viewport_rect().size)
 
 func _on_timer_timeout() -> void:
-    direction = DIRECTIONS.pick_random()
+	direction = DIRECTIONS.pick_random()

@@ -15,3 +15,22 @@ func _process(delta: float) -> void:
 
     position += direction * speed * delta
     position = position.clamp(Vector2.ZERO, get_viewport_rect().size)
+
+    if direction != Vector2.ZERO:
+        _update_facing(direction)
+
+func _update_facing(direction: Vector2) -> void:
+    var sprite := $Sprite2D as Sprite2D
+    match direction:
+        Vector2.RIGHT:
+            sprite.flip_h = false
+            sprite.rotation_degrees = 0
+        Vector2.LEFT:
+            sprite.flip_h = true
+            sprite.rotation_degrees = 0
+        Vector2.UP:
+            sprite.flip_h = false
+            sprite.rotation_degrees = -90
+        Vector2.DOWN:
+            sprite.flip_h = false
+            sprite.rotation_degrees = 90

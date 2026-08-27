@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="CS 276 Pac-Man"
+config/name="CS 276 Ms. Pac-Man"
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.6")
 

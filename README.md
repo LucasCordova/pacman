@@ -1,12 +1,14 @@
-# CS 276 · Pac-Man, One Build at a Time
+# CS 276 · Ms. Pac-Man, One Build at a Time
 
-The companion repo for **Lecture W1R1: Building Pac-Man**. Each branch is a
+*(Yes, the files and the repo say `pacman` - she inherited the codebase. The game is hers now.)*
+
+The companion repo for **Lecture W1R1: Building Ms. Pac-Man**. Each branch is a
 checkpoint from class; `main` is the finished state.
 
 | Branch | What works | GDScript you meet there |
 | --- | --- | --- |
-| `Build1` | Pac-Man moves with the arrow keys | variables & static typing, `Vector2`, functions, if/elif, `delta` |
-| `Build2` | Pac-Man faces where he is going | `match`, node references (`$Sprite2D`), sprite flip/rotation |
+| `Build1` | Ms. Pac-Man moves with the arrow keys | variables & static typing, `Vector2`, functions, if/elif, `delta` |
+| `Build2` | Ms. Pac-Man faces where he is going | `match`, node references (`$Sprite2D`), sprite flip/rotation |
 | `Build3` | A row of pellets you can eat; score in Output | scenes-in-code (`preload` + `instantiate`), `for` loops, a first **signal** |
 | `main`   | All of the above plus a wandering ghost | arrays, `pick_random()`, `Timer` |
 
@@ -31,7 +33,7 @@ cd pacman
 ```
 
 Open `project.godot` in Godot (standard build). Run the project; arrow keys move
-Pac-Man. On `main`, watch the ghost wander through the pellet row: it *eats the
+Ms. Pac-Man. On `main`, watch the ghost wander through the pellet row: it *eats the
 pellets*. That is not a bug we fix today, it is Thursday's cliffhanger.
 Why does the pellet not care who touched it? Collision layers and masks: next week.
 
@@ -39,7 +41,7 @@ Why does the pellet not care who touched it? Collision layers and masks: next we
 
 Walls and real collision (next week), the score on *screen* instead of the Output
 panel (signals, week 3), ghost brains (state machines, week 4), the actual maze
-(level building, week 10). Pac-Man grows with the course.
+(level building, week 10). Ms. Pac-Man grows with the course.
 
 ## Optional: git inside the Godot editor
 
